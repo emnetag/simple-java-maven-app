@@ -6,14 +6,14 @@
 trigger:
 - master
 
+pool:
+  vmImage: 'Ubuntu-16.04'
+
 resources:
   containers:
   - container: fortify_1820
     image: s00271sacrdevops.azurecr.io/fortify
     endpoint: s00271sacrdevops.azurecr.io
-
-pool:
-  vmImage: 'Ubuntu-16.04'
 
 steps:
   - script: printenv
