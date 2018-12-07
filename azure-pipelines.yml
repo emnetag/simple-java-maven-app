@@ -12,7 +12,6 @@ resources:
     image: s00271sacrdevops.azurecr.io/fortify
     endpoint: s00271sacrdevops.azurecr.io
 
-
 pool:
   vmImage: 'Ubuntu-16.04'
 
