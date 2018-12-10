@@ -3,16 +3,16 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+
 resources:
   containers:
   - container: fortify_1820
     image: s00271sacrdevops.azurecr.io/fortify
     endpoint: s00271sacrdevops.azurecr.io
+
 jobs:
 - job: build
   timeoutInMinutes: 10
-  pool:
-    name: 'Ubuntu-16.04'
   container: fortify_1820
   steps:
     - script: echo Hello World
