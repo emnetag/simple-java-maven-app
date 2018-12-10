@@ -6,13 +6,13 @@
 
 resources:
   containers:
-  - container: fortify_1820
-    image: s00271sacrdevops.azurecr.io/fortify
+  - container: fortify
+    image: s00271sacrdevops.azurecr.io/gas/fortify:18.20
     endpoint: s00271sacrdevops.azurecr.io
 
 jobs:
 - job: build
   timeoutInMinutes: 10
-  container: fortify_1820
+  container: fortify
   steps:
     - script: echo Hello World
